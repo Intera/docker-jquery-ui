@@ -38,5 +38,5 @@ RUN apt-get purge -y curl build-essential \
 
 USER localuser
 
-CMD ["/usr/bin/node", "server.js", "--host 0.0.0.0", "--console"]
+CMD ["/usr/bin/node", "server.js", "--host", "0.0.0.0", "--console"]
 EXPOSE 8088/tcp
