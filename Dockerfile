@@ -28,6 +28,9 @@ RUN npm install
 
 RUN grunt prepare
 
+COPY patches/fix-basename-calls.diff /home/localuser/patches/fix-basename-calls.diff
+RUN patch -p0 < /home/localuser/patches/fix-basename-calls.diff
+
 USER root
 
 RUN apt-get purge -y curl build-essential \

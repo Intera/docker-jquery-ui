@@ -1,0 +1,18 @@
+diff --git lib/builder-1-10.js lib/builder-1-10.js
+index 35a7a0f..6eba603 100644
+--- lib/builder-1-10.js
++++ lib/builder-1-10.js
+@@ -69,11 +69,11 @@ function Builder_1_10_0( build, jqueryUi, components, options, callback ) {
+ 			path: "jquery-ui-i18n.js",
+ 			data: files.i18nFiles.reduce(function( sum, file ) {
+ 				return sum + stripBanner( file );
+-			}, banner( jqueryUi.pkg, files.i18nFiles.paths().map( path.basename ) ) )
++			}, banner( jqueryUi.pkg, files.i18nFiles.paths().map( (file) => path.basename(file) ) ) )
+ 		});
+ 		build.bundleI18nMin = Files({
+ 			path: "jquery-ui-i18n.min.js",
+-			data: banner( jqueryUi.pkg, files.i18nFiles.paths().map( path.basename ), { minify: true }) + stripBanner( files.min( build.bundleI18n[ 0 ], { skipCache: true } ) )
++			data: banner( jqueryUi.pkg, files.i18nFiles.paths().map( (file) => path.basename(file) ), { minify: true }) + stripBanner( files.min( build.bundleI18n[ 0 ], { skipCache: true } ) )
+ 		});
+ 	} else {
+ 		build.i18nFiles = build.i18nMinFiles = build.bundleI18n = build.bundleI18nMin = Files();
