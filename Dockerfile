@@ -39,6 +39,8 @@ RUN apt-get purge -y curl build-essential \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN rm /home/localuser/jquery-ui.tar.gz
+
 USER localuser
 
 CMD ["/usr/bin/node", "server.js", "--host", "0.0.0.0", "--console"]
