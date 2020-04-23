@@ -17,3 +17,13 @@ http://localhost:8088/themeroller/
 **Download Builder**
 
 http://localhost:8088/download/
+
+## Theme loading issue
+
+Unfortunatly the loading of a theme via URL only works exactly **once** after the container was started.
+
+After that the preview loads correctly, but the form fields do not contain the correct values.
+
+See also: https://github.com/Intera/docker-jquery-ui/issues/1
+
+Any help on this issue is highly appreciated.
