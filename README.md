@@ -26,6 +26,6 @@ https://jquery-ui.intera.ws/
 
 ## Theme loading issue
 
-Unfortunatly sometimes the loading of the theme does not seem to work. The preview loads correctly, but the form fields do not contain the correct values (see also #1).
+Unfortunatly sometimes the loading of the theme does not seem to work. The preview loads correctly, but the form fields do not contain the correct values (see also [#1](https://github.com/Intera/docker-jquery-ui/issues/1)).
 
 It seems the problem can be fixed by clearing your browser caches. If you have any input on this issue, please add a comment.
