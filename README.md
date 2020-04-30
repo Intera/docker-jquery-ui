@@ -18,12 +18,14 @@ http://localhost:8088/themeroller/
 
 http://localhost:8088/download/
 
+## Public demo
+
+You can check out a public demo of the container here:
+
+https://jquery-ui.intera.ws/
+
 ## Theme loading issue
 
-Unfortunatly the loading of a theme via URL only works exactly **once** after the container was started.
+Unfortunatly sometimes the loading of the theme does not seem to work. The preview loads correctly, but the form fields do not contain the correct values (see also #1).
 
-After that the preview loads correctly, but the form fields do not contain the correct values.
-
-See also: https://github.com/Intera/docker-jquery-ui/issues/1
-
-Any help on this issue is highly appreciated.
+It seems the problem can be fixed by clearing your browser caches. If you have any input on this issue, please add a comment.
