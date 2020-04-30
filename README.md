@@ -22,7 +22,13 @@ http://localhost:8088/download/
 
 You can check out a public demo of the container here:
 
-https://jquery-ui.intera.ws/
+**Theme Roller**
+
+https://jquery-ui.intera.ws/themeroller/
+
+**Download Builder**
+
+https://jquery-ui.intera.ws/download/
 
 ## Theme loading issue
 
