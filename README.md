@@ -1,5 +1,9 @@
 # Docker Image for jQuery UI Theme Roller
 
+## Archived
+
+**Since the primary theme roller at https://jqueryui.com/download/ seems to be working again this package is archived.**
+
 This image allow you to run a local instance of the jQuery UI theme roller.
 
 You can simply start it with this command:
@@ -17,18 +21,6 @@ http://localhost:8088/themeroller/
 **Download Builder**
 
 http://localhost:8088/download/
-
-## Public demo
-
-You can check out a public demo of the container here:
-
-**Theme Roller**
-
-https://jquery-ui.intera.ws/themeroller/
-
-**Download Builder**
-
-https://jquery-ui.intera.ws/download/
 
 ## Theme loading issue
 
