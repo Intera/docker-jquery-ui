@@ -18,9 +18,9 @@ USER localuser
 
 WORKDIR /home/localuser
 
-RUN curl -sL https://github.com/jquery/download.jqueryui.com/archive/master.tar.gz > jquery-ui.tar.gz \
+RUN curl -sL https://github.com/jquery/download.jqueryui.com/archive/main.tar.gz > jquery-ui.tar.gz \
     && tar -xzf jquery-ui.tar.gz \
-    && mv download.jqueryui.com-master jquery-ui
+    && mv download.jqueryui.com-main jquery-ui
 
 WORKDIR /home/localuser/jquery-ui
 
